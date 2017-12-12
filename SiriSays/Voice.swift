@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 struct Voice {
     let language: String
-    let emojiUnicode: Unicode
+    let emoji: UIImage
 }

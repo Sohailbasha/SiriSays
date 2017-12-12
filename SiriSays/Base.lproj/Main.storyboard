@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qKF-lJ-ixT">
-                                <rect key="frame" x="8" y="385" width="359" height="36"/>
+                                <rect key="frame" x="8" y="385" width="342" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001-turtle-facing-right" translatesAutoresizingMaskIntoConstraints="NO" id="two-wP-Ngf">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -44,13 +44,13 @@
                                         </constraints>
                                     </imageView>
                                     <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9L4-jF-ZxA">
-                                        <rect key="frame" x="37" y="3" width="285" height="31"/>
+                                        <rect key="frame" x="37" y="3" width="268" height="31"/>
                                         <connections>
                                             <action selector="slide:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mza-DB-htU"/>
                                         </connections>
                                     </slider>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002-rabbit-facing-right" translatesAutoresizingMaskIntoConstraints="NO" id="9VF-9u-NDx">
-                                        <rect key="frame" x="323" y="0.0" width="36" height="36"/>
+                                        <rect key="frame" x="306" y="0.0" width="36" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="36" id="EVb-69-Lzk"/>
                                             <constraint firstAttribute="height" constant="36" id="cTj-wa-YBM"/>
@@ -59,7 +59,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-XK-OmE">
-                                <rect key="frame" x="8" y="339" width="359" height="36"/>
+                                <rect key="frame" x="8" y="339" width="342" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="low" translatesAutoresizingMaskIntoConstraints="NO" id="IuG-ty-Svx">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -70,13 +70,13 @@
                                         </constraints>
                                     </imageView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-Ta-Cmj">
-                                        <rect key="frame" x="37" y="3" width="285" height="31"/>
+                                        <rect key="frame" x="37" y="3" width="268" height="31"/>
                                         <connections>
                                             <action selector="slide:" destination="BYZ-38-t0r" eventType="valueChanged" id="laq-5I-8ac"/>
                                         </connections>
                                     </slider>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="high" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-pX-JpE">
-                                        <rect key="frame" x="323" y="0.0" width="36" height="36"/>
+                                        <rect key="frame" x="306" y="0.0" width="36" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Qyd-pX-JpE" secondAttribute="height" multiplier="1:1" id="XRf-bg-K2u"/>
                                             <constraint firstAttribute="height" constant="36" id="d7W-ob-65k"/>
@@ -88,9 +88,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qKF-lJ-ixT" secondAttribute="trailing" constant="8" id="0nH-6Q-O2n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qKF-lJ-ixT" secondAttribute="trailing" constant="25" id="0nH-6Q-O2n"/>
                             <constraint firstItem="D2I-XK-OmE" firstAttribute="top" secondItem="4Uh-x6-9Qf" secondAttribute="bottom" constant="8" id="587-Be-Rfw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D2I-XK-OmE" secondAttribute="trailing" constant="8" id="8y2-VB-yBU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D2I-XK-OmE" secondAttribute="trailing" constant="25" id="8y2-VB-yBU"/>
                             <constraint firstItem="qKF-lJ-ixT" firstAttribute="top" secondItem="D2I-XK-OmE" secondAttribute="bottom" constant="10" id="Ato-nX-qbh"/>
                             <constraint firstItem="D2I-XK-OmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="E5d-5Y-gAv"/>
                             <constraint firstItem="4Uh-x6-9Qf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="HEy-lj-EtD"/>

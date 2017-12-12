@@ -12,6 +12,14 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet var textField: UITextView!
+    @IBOutlet var pitchSlider: UISlider!
+    @IBOutlet var speedSlider: UISlider!
+    @IBOutlet var lowLabel: UILabel!
+    @IBOutlet var highLabel: UILabel!
+    @IBOutlet var slowLabel: UILabel!
+    @IBOutlet var fastLabel: UILabel!
+    @IBOutlet var playButton: UIButton!
+    
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -29,12 +37,52 @@ class ViewController: UIViewController {
     var defaultUtteranceRate: Float = 0.5
     var defaultLanguage = "en-US"
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        
         collectionView.register(FlagCollectionViewCell.self, forCellWithReuseIdentifier: "flagCell")
         self.view.addSubview(collectionView)
+        setupViews()
+    }
+    
+    func setupViews() {
+        NSLayoutConstraint(item: textField, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 8.0).isActive = true
+        
+        NSLayoutConstraint(item: textField, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailingMargin, multiplier: 1.0, constant: 8.0).isActive = true
+        
+        NSLayoutConstraint(item: textField, attribute: .top, relatedBy: .equal, toItem: collectionView, attribute: .bottom, multiplier: 1.0, constant: 8.0).isActive = true
+        
+        NSLayoutConstraint(item: textField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 300).isActive = true
+        
+        // allign lowlabel slider and highlabel
+        NSLayoutConstraint(item: lowLabel, attribute: .top, relatedBy: .equal, toItem: textField, attribute: .bottom, multiplier: 1.0, constant: 10.0).isActive = true
+        
+        NSLayoutConstraint(item: pitchSlider, attribute: .top, relatedBy: .equal, toItem: textField, attribute: .bottom, multiplier: 1.0, constant: 10.0).isActive = true
+        
+        NSLayoutConstraint(item: highLabel, attribute: .top, relatedBy: .equal, toItem: textField, attribute: .bottom, multiplier: 1.0, constant: 10.0).isActive = true
+        
+        
+        let c2: CGFloat = 50.0
+        
+        NSLayoutConstraint(item: slowLabel, attribute: .top, relatedBy: .equal, toItem: lowLabel, attribute: .bottom, multiplier: 1.0, constant: c2).isActive = true
+        
+        NSLayoutConstraint(item: speedSlider, attribute: .top, relatedBy: .equal, toItem: pitchSlider, attribute: .bottom, multiplier: 1.0, constant: c2).isActive = true
+        
+        NSLayoutConstraint(item: fastLabel, attribute: .top, relatedBy: .equal, toItem: highLabel, attribute: .bottom, multiplier: 1.0, constant: c2).isActive = true
+        
+        
+        
+        /*NSLayoutConstraint(item: pitchSlider, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 1).isActive = true*/
+        
+        NSLayoutConstraint(item: lowLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 8.0).isActive = true
+        
+        NSLayoutConstraint(item: pitchSlider, attribute: .leading, relatedBy: .equal, toItem: lowLabel, attribute: .trailingMargin, multiplier: 1.0, constant: 8.0).isActive = true
+        
+        NSLayoutConstraint(item: highLabel, attribute: .leading, relatedBy: .equal, toItem: pitchSlider, attribute: .trailingMargin, multiplier: 1.0, constant: 8.0).isActive = true
+
     }
     
     
@@ -70,7 +118,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return VoiceController.shared.voices.count
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "flagCell", for: indexPath) as? FlagCollectionViewCell

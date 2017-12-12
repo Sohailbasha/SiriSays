@@ -83,6 +83,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="fastLabel" destination="dBG-x8-ZHa" id="anx-WN-RNg"/>
+                        <outlet property="highLabel" destination="MxB-Ij-x2A" id="Amc-we-MQ4"/>
+                        <outlet property="lowLabel" destination="3nQ-qo-m0g" id="e0d-9I-gtz"/>
+                        <outlet property="pitchSlider" destination="zrK-Ta-Cmj" id="8xU-7l-NV8"/>
+                        <outlet property="playButton" destination="AC7-uc-WWn" id="OmR-rp-v8a"/>
+                        <outlet property="slowLabel" destination="3vZ-0p-Bmr" id="NXo-n3-1QO"/>
+                        <outlet property="speedSlider" destination="9L4-jF-ZxA" id="K4R-zV-Qsl"/>
                         <outlet property="textField" destination="4Uh-x6-9Qf" id="B0G-Dr-Yhq"/>
                     </connections>
                 </viewController>

@@ -11,16 +11,20 @@ import Foundation
 class VoiceController {
     static let shared = VoiceController()
     
-    var voices: [Voice] = []
-    
-    init() {
+    var voices: [Voice] = {
+        var array: [Voice] = []
+        
         let us = Voice(language: "en-US", emoji: #imageLiteral(resourceName: "US"))
         let gb = Voice(language: "en-GB", emoji: #imageLiteral(resourceName: "GB"))
         let au = Voice(language: "en-AU", emoji: #imageLiteral(resourceName: "AU"))
         let sa = Voice(language: "en-ZA", emoji: #imageLiteral(resourceName: "SA"))
         let ie = Voice(language: "en-IE", emoji: #imageLiteral(resourceName: "IE"))
         
-        voices = [us, gb, au, sa, ie]
+        return [us, gb, au, sa, ie]
+    }()
+    
+    init() {
+    
     }
 }
 

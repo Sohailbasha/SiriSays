@@ -14,6 +14,7 @@
 		FDE34CA71FDB1ADA00D709C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE34CA51FDB1ADA00D709C7 /* LaunchScreen.storyboard */; };
 		FDF813F31FDF59A60055BC00 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF813F21FDF59A60055BC00 /* Voice.swift */; };
 		FDF813F51FDF5B7C0055BC00 /* VoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF813F41FDF5B7C0055BC00 /* VoiceController.swift */; };
+		FDF813F71FDF60680055BC00 /* FlagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF813F61FDF60680055BC00 /* FlagCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FDE34CA81FDB1ADA00D709C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF813F21FDF59A60055BC00 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
 		FDF813F41FDF5B7C0055BC00 /* VoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceController.swift; sourceTree = "<group>"; };
+		FDF813F61FDF60680055BC00 /* FlagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				FDE34C9C1FDB1ADA00D709C7 /* AppDelegate.swift */,
 				FDE34C9E1FDB1ADA00D709C7 /* ViewController.swift */,
+				FDF813F61FDF60680055BC00 /* FlagCollectionViewCell.swift */,
 				FDE34CA01FDB1ADA00D709C7 /* Main.storyboard */,
 				FDE34CA31FDB1ADA00D709C7 /* Assets.xcassets */,
 				FDE34CA51FDB1ADA00D709C7 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF813F71FDF60680055BC00 /* FlagCollectionViewCell.swift in Sources */,
 				FDE34C9F1FDB1ADA00D709C7 /* ViewController.swift in Sources */,
 				FDF813F31FDF59A60055BC00 /* Voice.swift in Sources */,
 				FDF813F51FDF5B7C0055BC00 /* VoiceController.swift in Sources */,

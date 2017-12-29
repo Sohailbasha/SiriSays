@@ -41,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD14BDE01FF6DF5A00D3A039 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDF813F21FDF59A60055BC00 /* Voice.swift */,
+				FDF813F41FDF5B7C0055BC00 /* VoiceController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD14BDE11FF6DF6800D3A039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDF813F61FDF60680055BC00 /* FlagCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD14BDE21FF6DF6F00D3A039 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDE34C9E1FDB1ADA00D709C7 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		FDE34C901FDB1ADA00D709C7 = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				FDE34C9C1FDB1ADA00D709C7 /* AppDelegate.swift */,
-				FDE34C9E1FDB1ADA00D709C7 /* ViewController.swift */,
-				FDF813F61FDF60680055BC00 /* FlagCollectionViewCell.swift */,
 				FDE34CA01FDB1ADA00D709C7 /* Main.storyboard */,
 				FDE34CA31FDB1ADA00D709C7 /* Assets.xcassets */,
 				FDE34CA51FDB1ADA00D709C7 /* LaunchScreen.storyboard */,
 				FDE34CA81FDB1ADA00D709C7 /* Info.plist */,
-				FDF813F21FDF59A60055BC00 /* Voice.swift */,
-				FDF813F41FDF5B7C0055BC00 /* VoiceController.swift */,
+				FD14BDE21FF6DF6F00D3A039 /* View Controller */,
+				FD14BDE11FF6DF6800D3A039 /* View */,
+				FD14BDE01FF6DF5A00D3A039 /* Model */,
 			);
 			path = SiriSays;
 			sourceTree = "<group>";

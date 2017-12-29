@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         layout.minimumLineSpacing = 1
         layout.minimumLineSpacing = 1
         layout.itemSize = CGSize(width: 45, height: 45)
-        let frame = CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: 50)
+        let frame = CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: 50)
         let cv = UICollectionView(frame: frame, collectionViewLayout: layout)
         cv.backgroundColor = UIColor.clear
         return cv
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
     }
     
     func setupViews() {
+        
         NSLayoutConstraint(item: textField, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 8.0).isActive = true
         
         NSLayoutConstraint(item: textField, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailingMargin, multiplier: 1.0, constant: 8.0).isActive = true
@@ -73,9 +74,6 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint(item: fastLabel, attribute: .top, relatedBy: .equal, toItem: highLabel, attribute: .bottom, multiplier: 1.0, constant: c2).isActive = true
         
-        
-        
-        /*NSLayoutConstraint(item: pitchSlider, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 1).isActive = true*/
         
         NSLayoutConstraint(item: lowLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 8.0).isActive = true
         
